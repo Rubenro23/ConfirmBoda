@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmacion Boda</title>
+</head>
+<body>
+
+  <div id="wrapper">
+    <h2>Envie su formulario</h2>
+    <form formGroup="myForm" action="https://formsubmit.co/ratonruben@gmail.com" method="POST" (ngSumbit)="onSubmit()">
+      <label form="Nombre">Nombre</label>
+      <input type="text" name="name" required>
+
+      <label form="Apellidos">Apellidos</label>
+      <input type="text" name="surname" required>
+
+      <label for="Confirmacion">Confirmacion</label>
+      <input type="checkbox" name="si">Si
+      <input type="checkbox" name="no">No
+
+      <input type="submit" value="Enviar">
+
+      <input type="hidden" name="_next" value="http://localhost:4200/">
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
+  </div>
+
+</body>
+</html>
